@@ -18,10 +18,10 @@ public class Paciente extends Persona {
     public Paciente() {
     }
 
-    public Paciente(String nombre, String apellido, long dni, int idPaciente, int nroSocio) {
-        super(nombre, apellido, dni);
-        this.idPaciente = idPaciente;
+    public Paciente(String nombre, String apellido, long dni, Domicilio domicilio, int nroSocio, List<Turno> turnos) {
+        super(nombre, apellido, dni, domicilio);
         this.nroSocio = nroSocio;
+        this.turnos = turnos;
     }
 
     public int getIdPaciente() {

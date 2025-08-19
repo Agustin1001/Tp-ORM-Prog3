@@ -14,11 +14,10 @@ public class Empleado extends Persona {
     public Empleado() {
     }
 
-    public Empleado(String nombre, String apellido, int idEmpleando , long dni, int nroLegajo, double sueldo) {
-        super(nombre, apellido, dni);
+    public Empleado(String nombre, String apellido, long dni, Domicilio domicilio, int nroLegajo, double sueldo) {
+        super(nombre, apellido, dni, domicilio);
         this.nroLegajo = nroLegajo;
         this.sueldo = sueldo;
-        this.idEmpleando = idEmpleando;
     }
 
     public int getIdEmpleando() {

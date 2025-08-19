@@ -26,11 +26,12 @@ public class Medico extends Persona {
     public Medico() {
     }
 
-    public Medico(String nombre, String apellido, long dni, int idMedico, int matricula, long celular) {
-        super(nombre, apellido, dni);
-        this.idMedico = idMedico;
+    public Medico(String nombre, String apellido, long dni, Domicilio domicilio, int matricula, long celular, List<Turno> turnos, List<Especialidad> listaEspecialidad) {
+        super(nombre, apellido, dni, domicilio);
         this.matricula = matricula;
         this.celular = celular;
+        this.turnos = turnos;
+        this.listaEspecialidad = listaEspecialidad;
     }
 
     public int getIdMedico() {
